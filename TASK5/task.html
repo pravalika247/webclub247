@@ -1,61 +1,64 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Registration Form</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+    <link rel="stylesheet" href="styling.css" />
 </head>
 <body>
-    <div class="container">
-        <h2>Registration Form</h2>
-        <form action="submit_registration.php" method="post">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="age">Age:</label>
-                    <input type="number" id="age" name="age" required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="address">Address:</label>
-                    <textarea id="address" name="address" required></textarea>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Gender:</label>
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Female</label>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-            </div>
-
-            <input type="submit" value="Register">
-        </form>
+    <div class="head-img">
+        <img src="https://aurawebsolutions.com/wp-content/uploads/2019/08/ux-768x571.png" alt="Loading..."
+        width="200" height="200"><h1>webinar Registration form</h1></div>
+    
+<form action="/register" method="post">
+    <div class="form-header">
     </div>
-</body>
-</html>
-
-
-
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Your name">
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="Your email address">
+    </div>
+    <div class="form-group">
+      <label for="work_phone">Work Phone</label>
+      <input type="tel" name="work_phone" id="work_phone" placeholder="(123) 456-7890">
+    </div>
+    <div class="form-group">
+      <label for="company">Company</label>
+      <input type="text" name="company" id="company" placeholder="Your company name">
+    </div>
+    <div class="form-group">
+      <label for="company_address">Company Address</label>
+      <input type="text" name="company_address" id="company_address" placeholder="Street address">
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" name="city" id="city" placeholder="Your city">
+    </div>
+    <div class="form-group">
+      <label for="state">State/Province</label>
+      <input type="text" name="state" id="state" placeholder="Your state or province">
+    </div>
+    <div class="form-group">
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="">Please select a country</option>
+        <option value="US">america</option>
+        <option value="ja">japan</option>
+        <option value="ch">china</option>
+        <option value="ko">korea</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="company_website">Company url</label>
+      <input type="text" name="company_url" id="company_url" placeholder="company url">
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  </body>
+  </html>
